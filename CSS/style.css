@@ -235,3 +235,37 @@ footer{
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
+/* Base styles for mobile-first design */
+
+/* Example: Product card */
+.product-card {
+  width: 100%;
+  padding: 10px;
+}
+
+/* For tablets and up */
+@media (min-width: 768px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For desktops */
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
